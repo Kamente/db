@@ -40,7 +40,6 @@ INSERT INTO books (book_name, book_ref, book_price, author_id) VALUES("Born to c
 INSERT INTO books (book_name, book_ref, book_price, author_id) VALUES("Asubuhi njema", "7654", "500", 3);
 
 
-
 -- insert data to authors table
 INSERT INTO authors(author_name) VALUES("John");
 INSERT INTO authors(author_name) VALUES("Billy");
@@ -52,3 +51,36 @@ INSERT INTO borrowed_books(book_id, student_id) VALUES(2,3);
 
 
 SELECT authors.* FROM books
+
+
+sql datatypes:
+- NULL
+- TEXT-
+- REAL
+- INTEGER
+- BLOB
+
+
+
+
+-- CREATE TABLE time_borrowed (
+--     time_id INTEGER PRIMARY KEY AUTOINCREMENT,
+--     book_time TIME NOT NULL,
+--     student_id INTEGER, 
+--     book_id INTEGER,
+
+--     FOREIGN KEY (student_id) REFERENCES students (student_id),
+--     FOREIGN KEY (book_id) REFERENCES books (book_id)
+-- );
+
+
+
+-- CREATE TABLE foods(
+--     food_id INTEGER PRIMARY KEY AUTOINCREMENT,
+--     food_name VARCHAR(255) NOT NULL,
+--     spice_level INTEGER NOT NULL,
+--     country VARCHAR(255) NOT NULL
+-- );
+-- INSERT INTO foods (food_name,spice_level,country) VALUES("Buffalo Wing", 3, "USA");
+-- INSERT INTO foods (food_name,spice_level,country) VALUES("Mapo Tofu", 6, "China");
+-- INSERT INTO foods (food_name,spice_level,country) VALUES("Green Curry", 9, "Thailand");
