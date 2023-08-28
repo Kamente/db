@@ -14,3 +14,7 @@ db_cursor.execute("SELECT * FROM books;")
 
 for book in db_cursor:
     print (book)
+    
+# ternminating the connection or db_cursor
+# db_cursor.close()
+# connection.close()
